@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/reset.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/screen.css')}}">
+{% block title %}  {% endblock %}
+{% endblock %}
+{% block main %}
+    <canvas id="canvas">
+    <script>
+        var ctx = document.getElementById('canvas').getContext('2d');
+        var chart = new Chart(ctx, {
+            //the type of chart we want to create
+            type:'line',
+
+            //data for our dataset
+            data: {
+                labels: ["hi","there","this","is","a","test"],
+                datasets: [{
+                    label: "My first dataset",
+                    backgroundColor: 'rgb(255,99,132)',
+                    borderColor:'rgb(255,99,132)',
+                    data:[0,10,5,2,20,30,45],
+                }]
+            },
+        //configuration options go here
+        options:{}
+        });
+
+    </script>
+    </canvas>
+{% endblock %}

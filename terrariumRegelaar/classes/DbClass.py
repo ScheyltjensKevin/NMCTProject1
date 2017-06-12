@@ -3,10 +3,10 @@ class DbClass:
         import mysql.connector as connector
 
         self.__dsn = {
-            "host": "HostnameHere",
-            "user": "UserNameHere",
-            "passwd": "PasswdHere",
-            "db": "DBNameHere"
+            "host": "localhost",
+            "user": "projectUser",
+            "passwd": "NMCTproject1",
+            "db": "terrariumregelaardb"
         }
 
         self.__connection = connector.connect(**self.__dsn)

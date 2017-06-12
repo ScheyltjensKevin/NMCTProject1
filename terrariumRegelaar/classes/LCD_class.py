@@ -7,7 +7,6 @@ class LCD_controll():
         self.__line1 = 0x80
         self.__line2 = 0xC0
         self.__PIN_RS = 25
-        # self.__PIN_RW = RW connected to ground
         self.__PIN_E  = 24
         self.__PIN_D4 = 21
         self.__PIN_D5 = 20

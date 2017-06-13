@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import time
-from classes import LCD_class as lcd
+from classes.LCD_class import LCD_controll as lcd
 from classes import DHT22 as dht
 from classes import DbClass as db
 
@@ -10,16 +10,17 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(trans,GPIO.OUT)
 GPIO.setup(trans2,GPIO.OUT)
 
-GPIO.PWM(trans,0)
-GPIO.PWM(trans2,0)
-
 
 try:
-    while True:
-        time.sleep(2)
-        temperatuur = dht.returnTemp()
-        luchtvochtigheid = dht.returnHumidity()
 
-        lcd.LCD_controll("temp: " + temperatuur,"hum: " + luchtvochtigheid)
+    l1 = lcd(24, 25, 0, 0, 0, 0, 12, 16, 20, 21, 'hello', 'world', 4)
+
+    while True:
+        pass
+        # time.sleep(2)
+        # temperatuur = dht.returnTemp()
+        # luchtvochtigheid = dht.returnHumidity()
+        # time.sleep(2)
+
 except KeyboardInterrupt:
     GPIO.cleanup()

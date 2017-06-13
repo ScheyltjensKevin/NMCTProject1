@@ -13,7 +13,8 @@ def returnHumidity():
 
 
 while True:
-    read_first_line= str(float (ser.readline()))
+    read_first_line= str(float(ser.readline()))
     t[0] = str(float (ser.readline()))
-
+    # print(t[0])
+    # print(read_first_line)
 

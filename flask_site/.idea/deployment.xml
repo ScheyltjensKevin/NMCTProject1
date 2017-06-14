@@ -5,7 +5,7 @@
       <paths name="pi">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/pi/python_oefeningen/flask_site" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/python_oefeningen/flask_site" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

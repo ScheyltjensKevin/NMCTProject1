@@ -115,14 +115,13 @@ class LCD():
 
         if LCD.__teller == 0:
             self.__setGPIODataBits_instruction(0x80)
-
+            LCD.__teller = 1
         elif LCD.__teller == 1:
             self.__setGPIODataBits_instruction(0xC0)
             LCD.__teller = 0
 
         for character in text:
             self.__setGPIODataBits_data(ord(character))
-        LCD.__teller += 1
 
     def __function_set(self):
         self.__setGPIODataBits_instruction(0x28)

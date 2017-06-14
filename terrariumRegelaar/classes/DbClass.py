@@ -4,9 +4,9 @@ class DbClass:
 
         self.__dsn = {
             "host": "localhost",
-            "user": "projectUser",
-            "passwd": "NMCTproject1",
-            "db": "terrariumregelaardb"
+            "user": "kevin",
+            "passwd": "036059940",
+            "db": "terrariumDB"
         }
 
         self.__connection = connector.connect(**self.__dsn)

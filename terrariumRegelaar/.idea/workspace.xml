@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="22fbfd74-094e-4e36-a91c-637226d06088" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../flask_site/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../flask_site/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../flask_site/DbClass.py" afterPath="$PROJECT_DIR$/../flask_site/DbClass.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../flask_site/templates/data.html" afterPath="$PROJECT_DIR$/../flask_site/templates/data.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -623,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497939497107</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="makin sure everything is commited">
+      <created>1497939518950</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1497939518950</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -639,7 +648,7 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3319239" sideWeight="0.76354164" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3319239" sideWeight="0.76354164" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30833334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -678,7 +687,8 @@
     <MESSAGE value="trying to get data to db working" />
     <MESSAGE value="added code to switch on lamps&#10;- at 6 am the day lamp switches on and the night lamp switches of&#10;- at 9 pm the day lamp switches off and the night lamp switches onn&#10;&#10;added code to insert data into database and commit. &#10;-currently at 10 seconds for testing purpose" />
     <MESSAGE value="finished main program to add data to database&#10;added &quot;timer&quot; to input data after 60 runs of main while loop&#10;finished flask site to read data into a chart. &#10;added substrings to get data in correct format to put into chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished main program to add data to database&#10;added &quot;timer&quot; to input data after 60 runs of main while loop&#10;finished flask site to read data into a chart. &#10;added substrings to get data in correct format to put into chart" />
+    <MESSAGE value="makin sure everything is commited" />
+    <option name="LAST_COMMIT_MESSAGE" value="makin sure everything is commited" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1001,7 +1011,7 @@
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding />
         </state>
       </provider>

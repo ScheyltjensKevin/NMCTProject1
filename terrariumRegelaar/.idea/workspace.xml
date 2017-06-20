@@ -616,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497929160566</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finished main program to add data to database&#10;added &quot;timer&quot; to input data after 60 runs of main while loop&#10;finished flask site to read data into a chart. &#10;added substrings to get data in correct format to put into chart">
+      <created>1497939497107</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1497939497107</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">

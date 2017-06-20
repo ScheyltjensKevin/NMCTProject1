@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Mysql - @localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="terrariumDB">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <table id="6" parent="2" name="humidity"/>
+    <table id="7" parent="2" name="temperature"/>
+    <column id="8" parent="6" name="humidityID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="9" parent="6" name="value">
+      <Position>2</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="10" parent="6" name="timestamp">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="11" parent="6" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>humidityID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="12" parent="7" name="temperatureID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13" parent="7" name="value">
+      <Position>2</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="14" parent="7" name="fans">
+      <Position>3</Position>
+      <DataType>smallint(6)|0</DataType>
+    </column>
+    <column id="15" parent="7" name="timestamp">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="16" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>temperatureID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

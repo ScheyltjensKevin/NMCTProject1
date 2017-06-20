@@ -33,3 +33,19 @@ nav {
 .ct-chart{
     height: 770px;
 }
+
+.topcontent{
+    margin: 20px 0 20px 150px;
+    width: 770px;
+}
+.featurescontent{
+    margin: 20px 0 20px 150px;
+}
+.titleh2{
+        margin: 20px 0;
+
+}
+.titleh1{
+        margin: 20px 0;
+
+}

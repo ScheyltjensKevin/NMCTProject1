@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a99e2cfc-8af7-4fdb-8ee9-98eaed31a322" name="Default" comment="" />
+    <list default="true" id="a99e2cfc-8af7-4fdb-8ee9-98eaed31a322" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/instructable.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Project_sketch_bb.png" afterPath="$PROJECT_DIR$/../Project_sketch_bb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Project_sketch_schem.png" afterPath="$PROJECT_DIR$/../Project_sketch_schem.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/screen.css" afterPath="$PROJECT_DIR$/static/css/screen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../terrariumRegelaar/main.py" afterPath="$PROJECT_DIR$/../terrariumRegelaar/main.py" />
+    </list>
     <ignored path="flask_site.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,11 +88,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="flask_site.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flask_site.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flask_site.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="527">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -91,20 +100,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DbClass.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DbClass.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DbClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+            <state relative-caret-position="487">
+              <caret line="146" column="39" lean-forward="true" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
               <folding>
-                <marker date="1497928997914" expanded="true" signature="595:620" ph="SELECT * FRO... temperature" />
-                <marker date="1497928997914" expanded="true" signature="999:1028" ph="SELECT * FRO... temperature" />
-                <marker date="1497928997914" expanded="true" signature="1932:1960" ph="SELECT value... temperature" />
-                <marker date="1497928997914" expanded="true" signature="2343:2376" ph="SELECT times... temperature" />
-                <marker date="1497928997914" expanded="true" signature="3648:3674" ph="SELECT * FRO... humidity" />
-                <marker date="1497928997914" expanded="true" signature="4563:4593" ph="SELECT value... humidity" />
-                <marker date="1497928997914" expanded="true" signature="5888:5938" ph="SELECT * FRO... temperature" />
+                <marker date="1497938959997" expanded="true" signature="595:620" ph="SELECT * FRO... temperature" />
+                <marker date="1497938959997" expanded="true" signature="999:1028" ph="SELECT * FRO... temperature" />
+                <marker date="1497938959997" expanded="true" signature="2537:2565" ph="SELECT value... temperature" />
+                <marker date="1497938959997" expanded="true" signature="2948:2981" ph="SELECT times... temperature" />
+                <marker date="1497938959997" expanded="true" signature="4597:4623" ph="SELECT * FRO... humidity" />
+                <marker date="1497938959997" expanded="true" signature="6057:6087" ph="SELECT value... humidity" />
+                <marker date="1497938959997" expanded="true" signature="7592:7642" ph="SELECT * FRO... temperature" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="terrariumDB.temperature" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/fec7eb8e/798d0695-309f-4e06-a1f8-282b29df291f/terrariumDB.temperature">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,8 +146,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="119">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -132,8 +156,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="170">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -149,21 +173,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/screen.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="error.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/error.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="screen.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/screen.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -191,12 +215,12 @@
         <option value="$PROJECT_DIR$/static/css/reset.css" />
         <option value="$PROJECT_DIR$/templates/instructable.html" />
         <option value="$PROJECT_DIR$/templates/error.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/static/css/screen.css" />
         <option value="$PROJECT_DIR$/templates/macros/macro.html" />
         <option value="$PROJECT_DIR$/flask_site.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/data.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/css/screen.css" />
         <option value="$PROJECT_DIR$/DbClass.py" />
       </list>
     </option>
@@ -556,11 +580,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33509514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3984375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21302083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -866,47 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2017.1/system/remote_sources/1002024362/-102312246/werkzeug/serving.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="719" column="0" lean-forward="false" selection-start-line="719" selection-start-column="0" selection-end-line="719" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/fec7eb8e/798d0695-309f-4e06-a1f8-282b29df291f/terrariumDB.temperature">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -924,29 +911,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/data.html">
+    <entry file="file://$PROJECT_DIR$/static/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-519">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="612">
+          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask_site.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,18 +927,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-519">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fec7eb8e/798d0695-309f-4e06-a1f8-282b29df291f/terrariumDB.temperature">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DbClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        <state relative-caret-position="487">
+          <caret line="146" column="39" lean-forward="true" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
           <folding>
-            <marker date="1497928997914" expanded="true" signature="595:620" ph="SELECT * FRO... temperature" />
-            <marker date="1497928997914" expanded="true" signature="999:1028" ph="SELECT * FRO... temperature" />
-            <marker date="1497928997914" expanded="true" signature="1932:1960" ph="SELECT value... temperature" />
-            <marker date="1497928997914" expanded="true" signature="2343:2376" ph="SELECT times... temperature" />
-            <marker date="1497928997914" expanded="true" signature="3648:3674" ph="SELECT * FRO... humidity" />
-            <marker date="1497928997914" expanded="true" signature="4563:4593" ph="SELECT value... humidity" />
-            <marker date="1497928997914" expanded="true" signature="5888:5938" ph="SELECT * FRO... temperature" />
+            <marker date="1497938959997" expanded="true" signature="595:620" ph="SELECT * FRO... temperature" />
+            <marker date="1497938959997" expanded="true" signature="999:1028" ph="SELECT * FRO... temperature" />
+            <marker date="1497938959997" expanded="true" signature="2537:2565" ph="SELECT value... temperature" />
+            <marker date="1497938959997" expanded="true" signature="2948:2981" ph="SELECT times... temperature" />
+            <marker date="1497938959997" expanded="true" signature="4597:4623" ph="SELECT * FRO... humidity" />
+            <marker date="1497938959997" expanded="true" signature="6057:6087" ph="SELECT value... humidity" />
+            <marker date="1497938959997" expanded="true" signature="7592:7642" ph="SELECT * FRO... temperature" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_site.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>

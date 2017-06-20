@@ -6,27 +6,36 @@
 {% block title %} {# Homepage #}{% endblock %}
 {% endblock %}
 {% block main %}
-    <img src="{{ url_for('static',filename='/images/placeholder.gif' )}}" class="placeholder">
-    <h1>Terrarium Regelaar</h1>
-    <h2> Wat is het?</h2>
+    <div class="topcontent">
+        <img src="{{ url_for('static',filename='/images/placeholder.gif' )}}" class="placeholder">
+        <h1 class="titleh1">Terrarium Regelaar</h1>
+        <h2 class="titleh2"> Wat is het?</h2>
 
-    <p> De terrarium regelaar is een microprocessor waaraan enkele elementen zijn aangesloten. De belangrijkste is de sensor die aangesloten is,
+        <p> De terrarium regelaar is een microprocessor waaraan enkele elementen zijn aangesloten. De belangrijkste is de sensor die aangesloten is,
         deze sensor meet zowel de temperatuur als de luchtvochtigheid.
         Er zijn twee verschillende lampen geconnecteerd, een lamp voor in de dag en een lamp voor in de nacht.
         Deze lampen worden aangestuurd via de processor en zullen automatisch wisselen tussen dag en nacht.
         Verder zijn er twee ventilatoren aangesloten die de luchtvochtigheid kunnen beinvloeden. </p>
+    </div>
 
 
-    <h2>Features</h2>
-    <ul>
-        <li>feature one</li>
-        <li>feature two</li>
-        <li> feature three</li>
-        <li>feature four</li>
-        <li> feature five</li>
-    </ul>
-    <img src="../static/images/image_preview.jpg">
 
-    <h2>You can make one yourself!</h2>
+
+    <div class="featurescontent">
+        <h2 class="titleh2">Features</h2>
+        <ul>
+            <li>Sensor to measure temperature</li>
+            <li>Sensor to measure humidity</li>
+            <li>Controlls two heatlamps</li>
+            <li>Controlls two fans</li>
+            <li>Shows temperature and humidity realtime</li>
+            <li>Pushes data to a database</li>
+            <li>Requests data to show in a graph on a webpage</li>
+        </ul>
+        <img src="../static/images/image_preview.jpg">
+    </div>
+
+
+
     <p></p>
 {% endblock %}

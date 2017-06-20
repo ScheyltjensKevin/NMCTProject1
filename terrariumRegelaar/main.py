@@ -29,7 +29,6 @@ dataTransferer = db.DbClass()
 start = 0
 
 try:
-
     GPIO.output(vent,GPIO.LOW)
     GPIO.output(vent2,GPIO.LOW)
     l1.startDisplay()

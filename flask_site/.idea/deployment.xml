@@ -9,10 +9,17 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="piServerRemote">
+      <paths name="piServerRemoteHome">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/python_oefeningen/flask_site" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="piServerRemoteschool">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/python_oefeningen/flask_site" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

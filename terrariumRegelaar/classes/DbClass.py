@@ -12,27 +12,6 @@ class DbClass:
         self.__connection = connector.connect(**self.__dsn)
         self.__cursor = self.__connection.cursor()
 
-    def getDataFromDatabase(self):
-        # Query zonder parameters
-
-        sqlQuery = "SELECT * FROM tablename"
-
-        self.__cursor.execute(sqlQuery)
-        result = self.__cursor.fetchall()
-        self.__cursor.close()
-        return result
-
-    def getDataFromDatabaseMetVoorwaarde(self, voorwaarde):
-        # Query met parameters
-        sqlQuery = "SELECT * FROM tablename WHERE columnname = '{param1}'"
-        # Combineren van de query en parameter
-        sqlCommand = sqlQuery.format(param1=voorwaarde)
-
-        self.__cursor.execute(sqlCommand)
-        result = self.__cursor.fetchall()
-        self.__cursor.close()
-        return result
-
     def setTempDataToDatabase(self, valueTemp, timestamp, fans):
         if self.__cursor != self.__connection.cursor():
             self.__cursor = self.__connection.cursor()

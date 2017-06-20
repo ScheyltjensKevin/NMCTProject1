@@ -1,33 +1,108 @@
 {% extends 'base.html' %}
 
-
 {% block head %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/reset.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/screen.css')}}">
-{% block title %}  {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/screen.css') }}">
+
+    {% block title %}  {% endblock %}
+    <script src="{{ url_for('static',filename='Chart.js-2.5.0/dist/Chart.js') }}"></script>
+
 {% endblock %}
 {% block main %}
-    <canvas id="canvas">
-    <script>
-        var ctx = document.getElementById('canvas').getContext('2d');
-        var chart = new Chart(ctx, {
-            //the type of chart we want to create
-            type:'line',
+    <div class="container">
+        <div class="row">
+            <div class="col s9 offset-s3">
+                <div class="chart">
+                    <canvas id="tempchart"></canvas>
+                    <canvas id="humchart"></canvas>
+                </div>
+                <script>
+                    var ctx = document.getElementById('tempchart').getContext('2d');
+                    var tempchart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                           labels:[{% for item in tempTimestamp %}
+                        "{{item}}",
+                    {% endfor %}],
+                    datasets: [{
+                        label: 'Temperature',
+                        data: [{% for item in temperature %}
+                        "{{item}}",
+                        {% endfor %}],
+                    backgroundColor: "rgba(153,255,51,0.4)"
+                    }]
+                    },
+                    options: {
+                        responsive: true,
+                            legend
+                    :
+                        {
+                            position: 'top'
+                        }
+                    ,
+                        hover: {
+                            mode: 'label'
+                        }
+                    ,
+                        scales: {
+                            xAxes: [{
+                                display: true
 
-            //data for our dataset
-            data: {
-                labels: ["hi","there","this","is","a","test"],
-                datasets: [{
-                    label: "My first dataset",
-                    backgroundColor: 'rgb(255,99,132)',
-                    borderColor:'rgb(255,99,132)',
-                    data:[0,10,5,2,20,30,45],
-                }]
-            },
-        //configuration options go here
-        options:{}
-        });
+                            }],
+                                yAxes: [{
+                                display: true,
+                                ticks: {
+                                    scaleStartValue:15
+                                        }
+                            }]
+                        }
+                    }
+                    });
+                </script>
+                <script>
+                    var ctx = document.getElementById('humchart').getContext('2d');
+                    var humchart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                           labels:[{% for item in humTimestamp %}
+                        "{{item}}",
+                    {% endfor %}],
+                    datasets: [{
+                        label: 'humidity',
+                        data: [{% for item in humidity %}
+                        "{{item}}",
+                        {% endfor %}],
+                    backgroundColor: "rgba(255,255,0,0.4)"
+                    }]
+                    },
+                    options: {
+                        responsive: true,
+                            legend
+                    :
+                        {
+                            position: 'top'
+                        }
+                    ,
+                        hover: {
+                            mode: 'label'
+                        }
+                    ,
+                        scales: {
+                            xAxes: [{
+                                display: true
 
-    </script>
-    </canvas>
+                            }],
+                                yAxes: [{
+                                display: true,
+                                ticks: {
+                                    scaleStartValue:15
+                                        }
+                            }]
+                        }
+                    }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
 {% endblock %}

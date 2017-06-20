@@ -5,30 +5,31 @@ from classes import DbClass as db
 from classes import aLCD_class as lcd
 import datetime
 
-
-l1 = lcd.LCD(24, 27, 25, 22, 13, 19, 26, 12, 16, 20, 21)
+l1 = lcd.LCD(17, 27, 22, 18, 23, 24, 25, 5, 6, 13, 19)
 
 sleepTime = 3
 
 GPIO.setmode(GPIO.BCM)
-vent = 5
-vent2 = 6
-lampDag = 17
-lampNacht=23
+vent = 21
+vent2 = 26
+lampDag = 16
+lampNacht=20
 
 GPIO.setup(vent,GPIO.OUT)
 GPIO.setup(vent2,GPIO.OUT)
 GPIO.setup(lampDag,GPIO.OUT)
 GPIO.setup(lampNacht,GPIO.OUT)
 
+GPIO.output(lampNacht, GPIO.HIGH)
+GPIO.output(lampDag, GPIO.HIGH)
+
 counter=0
 areFansOn = 0
 dataTransferer = db.DbClass()
-start = int(datetime.datetime.now().second)
+start = 0
 
 try:
-    GPIO.output(lampNacht,GPIO.HIGH)
-    GPIO.output(lampDag,GPIO.HIGH)
+
     GPIO.output(vent,GPIO.LOW)
     GPIO.output(vent2,GPIO.LOW)
     l1.startDisplay()
@@ -59,24 +60,19 @@ try:
 
         if counter == 0 and (dt.hour > 6 or dt.hour < 21):
             GPIO.output(lampDag,GPIO.LOW)
-            counter +=1
-        if counter == 0 and (dt.hour < 6 or dt.hour > 21):
+            counter =1
+        elif counter == 0 and (dt.hour < 6 or dt.hour > 21):
             GPIO.output(lampNacht,GPIO.LOW)
-            counter +=1
+            counter =1
 
-        stop = int(datetime.datetime.now().second)
-        result = stop - start
-        # print (stop)
-        # print (start)
-        if result == 10:
+        start += 1
+        if start == 60:
             moment = datetime.datetime.now()
             dataTransferer.setTempDataToDatabase(temperature,moment,areFansOn)
             dataTransferer.setHumDataToDatabase(humidity,moment)
-            start = stop
-            print(result)
-        elif stop == 59:
-            stop = 12
-            start = 2
+            start = 0
+
+
 
 except KeyboardInterrupt:
     l1.reset()

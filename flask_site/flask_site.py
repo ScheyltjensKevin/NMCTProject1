@@ -1,26 +1,30 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request
+import DbClass as db
 
 app = Flask(__name__)
 
+database = db.DbClass()
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-
 @app.errorhandler(404)
 def pageNotFound(error):
     return render_template('error.html',error=error)
 
-
-@app.route('/data')
+@app.route('/data',methods=['GET'])
 def data():
-    return render_template('data.html')
+    if request.method=='GET':
+        temperature= database.getTempvalueDataFromDatabase()
+        tempTimestamp= database.getTempTimestampDataFromDatabase()
+        tempFansOn= database.getTempFansDataFromDatabase()
 
-
-@app.route('/instructable')
-def instructable():
-    return render_template('instructable.html')
+        humidity = database.getHumValueDataFromDatabase()
+        humTimestamp= database.getHumTimestampDataFromDatabase()
+    return render_template('data.html',temperature=temperature,
+                           tempTimestamp=tempTimestamp,tempFansOn=tempFansOn,
+                           humidity=humidity,humTimestamp=humTimestamp)
 
 
 if __name__ == '__main__':
